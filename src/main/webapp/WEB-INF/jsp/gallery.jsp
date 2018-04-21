@@ -312,6 +312,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 			<p>Copyright &copy; 2016.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
 		</div>
 	</div>
+		</div>
 			<!-- Classie -->
 				<script src="js/classie.js"></script>
 				<script>
@@ -339,9 +340,9 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
 				<script src="js/jquery.nicescroll.js"></script>
 				<script src="js/scripts.js"></script>
 				<!--//scrolling js-->
-				
 
-			
-			
+
+
+
 </body>
 </html>
