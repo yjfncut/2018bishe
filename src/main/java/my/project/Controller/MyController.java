@@ -1,5 +1,6 @@
 package my.project.Controller;
 
+import my.project.model.ChartData;
 import my.project.model.Guiji;
 import my.project.util.ReadFile;
 import org.springframework.stereotype.Controller;
@@ -58,8 +59,12 @@ public class MyController {
         String filePath = "K:\\myproject\\src\\main\\webapp\\txt\\new_test.csv";
         List<Guiji> gj=ReadFile.readTraData(filePath);
         view.addObject("pageNo",0);
-        view.addObject("sum",gj.size());
-        view.addObject("gj",gj.subList(0,30));
+        view.addObject("sum",gj.size()/30);
+
+        if(gj.size()<30)
+            view.addObject("gj",gj.subList(0,gj.size()));
+        else
+            view.addObject("gj",gj.subList(0,30));
         return view;
     }
 
@@ -72,7 +77,7 @@ public class MyController {
         List<Guiji> gj= null;
         gj = ReadFile.readTraData(filePath);
         view.addObject("pageNo",i);
-        view.addObject("sum",gj.size());
+        view.addObject("sum",gj.size()/30);
         view.addObject("gj",gj.subList(i*30,(i+1)*30));
         return view;
         } catch (IOException e) {
@@ -80,6 +85,29 @@ public class MyController {
         }
         return view;
     }
+
+//    @RequestMapping(value = "/featureAnalysis")
+//    public ModelAndView featureAnalysis(HttpServletRequest request, HttpServletResponse response, Model model) {
+//        ModelAndView view = new ModelAndView("featureAnalyze");
+//        try {
+//            ChartData chartData=new ChartData();
+//            chartData.setData();
+//            chartData.setFillColor();
+//            chartData.setLabel();
+//            chartData.setPointHighlightFill();
+//            chartData.setStrokeColor();
+//            chartData.setPointColor();
+//            chartData.setPointHighlightStroke();
+//            chartData.setPointStrokeColor();
+//
+//            List<String> list=new ArrayList<String>();
+//            list.add("red");list.add("orange");list.add("yellow");list.add("green");list.add("blue");
+//            view.addObject("color",list.toArray());
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//        return view;
+//    }
 
 
 }

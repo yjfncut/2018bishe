@@ -10,7 +10,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Blank-Page</title>
+    <title>轨迹分类系统</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Ultra Modern Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
@@ -47,95 +47,39 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                 <div class="scrollbar scrollbar1">
                     <ul class="nav" id="side-menu">
                         <li>
-                            <a href="index.html"><i class="fa fa-home nav_icon"></i>Dashboard</a>
+                            <a href="index.html" class="active"><i class="fa fa-home nav_icon"></i>首页</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-cogs nav_icon"></i>Components <span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-cogs nav_icon"></i>数据集介绍 <span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level collapse">
                                 <li>
-                                    <a href="gallery.jsp">Gallery</a>
+                                    <a href="${ctx}/gallery">数据集介绍</a>
                                 </li>
                                 <li>
-                                    <a href="grid.html">Grid</a>
+                                    <a href="${ctx}/example">初始数据格式</a>
                                 </li>
                             </ul>
                             <!-- /nav-second-level -->
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-book nav_icon"></i>Elements <span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-book nav_icon"></i>轨迹数据 <span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level collapse">
                                 <li>
-                                    <a href="buttons.html">Buttons</a>
-                                </li>
-                                <li>
-                                    <a href="typography.html">Typography</a>
-                                </li>
-                                <li>
-                                    <a href="icon.html">Icon</a>
+                                    <a href="${ctx}/datatable">数据列表</a>
                                 </li>
                             </ul>
                             <!-- /nav-second-level -->
                         </li>
                         <li>
-                            <a href="widgets.html"><i class="fa fa-th-large nav_icon"></i>Widgets</a>
-                        </li>
-
-                        <li>
-                            <a href="#"><i class="fa fa-check-square-o nav_icon"></i>Forms<span class="fa arrow"></span></a>
+                            <a href="widgets.html"><i class="fa fa-book nav_icon"></i>轨迹分类</a>
                             <ul class="nav nav-second-level collapse">
                                 <li>
-                                    <a href="inputs.html">Inputs</a>
+                                    <a href="${ctx}/dataclass">分类实验</a>
                                 </li>
                                 <li>
-                                    <a href="validation.html">Form Validation</a>
+                                    <a href="${ctx}/classresult">分类结果</a>
                                 </li>
                             </ul>
-                            <!-- //nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-envelope nav_icon"></i>Mailbox<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level collapse">
-                                <li>
-                                    <a href="inbox.html">Inbox</a>
-                                </li>
-                                <li>
-                                    <a href="inboxdetails.html">Inbox Details</a>
-                                </li>
-                            </ul>
-                            <!-- //nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="maps.html"><i class="fa fa-location-arrow nav_icon"></i>Maps</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-file-text-o nav_icon"></i>Pages<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level collapse">
-                                <li>
-                                    <a href="login.html">Login</a>
-                                </li>
-                                <li>
-                                    <a href="signup.html">SignUp</a>
-                                </li>
-                                <li>
-                                    <a href="blank-page.html">Blank Page</a>
-                                </li>
-                            </ul>
-                            <!-- //nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="charts.html" class="chart-nav"><i class="fa fa-bar-chart nav_icon"></i>Charts</a>
-                        </li>
-                        <li>
-                            <a href="#" class="chart11-nav"><i class="fa fa-list-ul nav_icon"></i>Extras<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level collapse">
-                                <li>
-                                    <a href="tables.html">Tables</a>
-                                </li>
-                                <li>
-                                    <a href="404.html">404 Page</a>
-                                </li>
-                            </ul>
-                            <!-- //nav-second-level -->
                         </li>
                     </ul>
                 </div>
@@ -149,7 +93,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
         <div class="header-left">
             <!--logo -->
             <div class="logo">
-                <a href="index.html"><h1>Ultra Modern</h1></a>
+                <a href="index.html"><h1>轨迹分类系统</h1></a>
             </div>
             <!--//logo-->
             <div class="user-right">
@@ -278,17 +222,16 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                 <div class="bottom-form">
                     <form name="Form2" action="/upload" method="post"  enctype="multipart/form-data">
 
-                    <div class="col-md-12 grid-form1">
-                        <h5>File input</h5>
-                        <input type="file" name="trainFile">
-                        <button type="submit" class="btn btn-primary"> submit</button>
-                        <button type="reset" class="btn btn-warning"> Reset</button>
-                        <div class="button-heading">
-                        <button  href="#" class="hvr-bounce-to-right"> SVM分类</button>
-                        <button  href="#" class="hvr-bounce-to-right"> DNN分类</button>
-                        <button  href="#" class="hvr-bounce-to-right"> DNN&PE</button>
-                        <button  href="#" class="hvr-bounce-to-right"> SVM分类</button>
-                        </div>
+                    <div class="col-md-12 grid-form1 " style="float:left;margin-left:30%">
+                        <%--<h5>File input</h5>--%>
+                        <input type="file" name="trainFile" style="width:230px;height:40px;float:left;padding-top:5px;" >
+                        <button type="submit" class="btn btn-primary" style="width: 70px;height:40px;margin-right:30px"> submit</button>
+                       <%-- <button type="reset" class="btn btn-warning" style="margin-left:2%"> Reset</button>--%>
+
+                        <a  href="/fenlei?type=1" class="btn btn-primary " > SVM分类</a>
+                        <a  href="/fenlei?type=3" class="btn btn-primary "> DNN分类</a>
+                        <a  href="/fenlei?type=2" class="btn btn-primary "> DNN基础</a>
+
                     </div>
                         <div class="main-page">
                             <!--buttons-->
@@ -344,7 +287,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
     <!--typo-ends-->
 
     <div class="copy-section">
-        <p>Copyright &copy; 2016.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+        <p>Copyright NCUT LAB1107-杨佳放</p>
     </div>
 </div>
 <!-- Classie -->

@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Home</title>
+    <title>轨迹分类系统</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Ultra Modern Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
@@ -133,12 +133,6 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                                 <li>
                                     <a href="${ctx}/datatable">数据列表</a>
                                 </li>
-                                <li>
-                                    <a href="typography.html">Typography</a>
-                                </li>
-                                <li>
-                                    <a href="icon.html">Icon</a>
-                                </li>
                             </ul>
                             <!-- /nav-second-level -->
                         </li>
@@ -149,70 +143,12 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                                     <a href="${ctx}/dataclass">分类实验</a>
                                 </li>
                                 <li>
-                                    <a href="typography.html">Typography</a>
+                                    <a href="${ctx}/classresult">分类结果</a>
                                 </li>
                                 <li>
-                                    <a href="icon.html">Icon</a>
+                                    <a href="${ctx}/traffic">出行习惯分析</a>
                                 </li>
                             </ul>
-                        </li>
-
-                        <li>
-                            <a href="#"><i class="fa fa-check-square-o nav_icon"></i>Forms<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level collapse">
-                                <li>
-                                    <a href="inputs.html">Inputs</a>
-                                </li>
-                                <li>
-                                    <a href="validation.html">Form Validation</a>
-                                </li>
-                            </ul>
-                            <!-- //nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-envelope nav_icon"></i>Mailbox<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level collapse">
-                                <li>
-                                    <a href="inbox.html">Inbox</a>
-                                </li>
-                                <li>
-                                    <a href="inboxdetails.html">Inbox Details</a>
-                                </li>
-                            </ul>
-                            <!-- //nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="maps.html"><i class="fa fa-location-arrow nav_icon"></i>Maps</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-file-text-o nav_icon"></i>Pages<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level collapse">
-                                <li>
-                                    <a href="login.html">Login</a>
-                                </li>
-                                <li>
-                                    <a href="signup.html">SignUp</a>
-                                </li>
-                                <li>
-                                    <a href="blank-page.html">Blank Page</a>
-                                </li>
-                            </ul>
-                            <!-- //nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="charts.html" class="chart-nav"><i class="fa fa-bar-chart nav_icon"></i>Charts</a>
-                        </li>
-                        <li>
-                            <a href="#" class="chart11-nav"><i class="fa fa-list-ul nav_icon"></i>Extras<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level collapse">
-                                <li>
-                                    <a href="tables.html">Tables</a>
-                                </li>
-                                <li>
-                                    <a href="404.html">404 Page</a>
-                                </li>
-                            </ul>
-                            <!-- //nav-second-level -->
                         </li>
                     </ul>
                 </div>

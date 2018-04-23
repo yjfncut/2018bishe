@@ -1,3 +1,11 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%--
+  Created by IntelliJ IDEA.
+  User: 1107
+  Date: 2018-04-21
+  Time: 10:15
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE HTML>
 <html>
@@ -29,17 +37,6 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
     <script src="js/custom.js"></script>
     <link href="css/custom.css" rel="stylesheet">
     <!--//Metis Menu -->
-    <!-- pop-up -->
-    <link rel="stylesheet" href="css/swipebox.css">
-    <script src="js/jquery.swipebox.min.js"></script>
-    <script type="text/javascript">
-        jQuery(function($) {
-            $(".swipebox").swipebox();
-        });
-    </script>
-
-    <!-- pop-up -->
-
 </head>
 <body class="cbp-spmenu-push">
 <div class="main-content">
@@ -113,7 +110,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                                 <ul class="dropdown-menu drp-mnu">
                                     <li> <a href="#"><i class="fa fa-cog"></i> Settings</a> </li>
                                     <li> <a href="#"><i class="fa fa-user"></i> Profile</a> </li>
-                                    <li> <a href="login.html"><i class="fa fa-sign-out"></i> Logout</a> </li>
+                                    <li> <a href="#"><i class="fa fa-sign-out"></i> Logout</a> </li>
                                 </ul>
                             </li>
                         </ul>
@@ -218,58 +215,115 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
         <div class="clearfix"> </div>
     </div>
     <!-- //header-ends -->
+    <!-- //header-ends -->
     <div id="page-wrapper">
         <div class="main-page">
             <div class="blank-page">
-                <h2>GeoLife数据介绍</h2>
-                ${content}
-            </div>
-            <div class="gallery-grids galry">
-                <div class="col-md-4 gallery-grid">
-                    <a href="images/example.png" class="swipebox"><span class="rollover1"> </span></a>
-                    <img src="images/example.png" class="img-responsive" alt="/">
-                </div>
-                <div class="col-md-4 gallery-grid">
-                    <a href="images/example1.png" class="swipebox"><span class="rollover1"> </span></a>
-                    <img src="images/example1.png" class="img-responsive" alt="/">
-                </div>
-                <div class="col-md-4 gallery-grid">
-                    <a href="images/example2.png" class="swipebox"><span class="rollover1"> </span></a>
-                    <img src="images/example2.png" class="img-responsive" alt="/">
+                <div class="bottom-form">
+                    <form name="Form2" action="/classresult" method="post"  enctype="multipart/form-data">
+                        <div class="main-page">
+                            <!--buttons-->
+                            <%--<div class="grids-section">--%>
+                            <h2 class="hdg" style="float:left">分类结果集</h2>
+                            <a  href="/analyze" class="btn btn-primary " style="float:right;margin-right:7%"> 结果分析</a>
+                            <div class=" table-grid" style="padding-top:60px;">
+                                <div class="panel panel-widget">
+                                    <div class="blank-page">
+                                        <table class="table table-striped" >
+                                            <thead>
+                                            <tr>
+                                                <th width=200>模式</th>
+                                                <th width=200>速度排列熵</th>
+                                                <th width=200>角度排列熵</th>
+                                                <th width=200>平均速度</th>
+                                                <th width=200>速度方差</th>
+                                                <th width=200>轨迹段方向变化</th>
+                                                <th width=200>停顿率</th>
+                                                <th width=200>轨迹速度变化率</th>
+                                                <th width=200>分类结果</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <%--<%--%>
+                                            <%--List list= (List) request.getAttribute("gj");--%>
+                                            <%--String pageNo= (String) request.getAttribute("pageNo");--%>
+                                            <%--%>--%>
+                                            <c:forEach items="${gj}" var="gj" varStatus="vs">
+                                                <tr id = "tr1">
+                                                    <td id="tdfrist">${gj.model}</td>
+                                                    <td >${gj.peofvelocity}</td>
+                                                    <td >${gj.peofangle}</td>
+                                                    <td >${gj.av}</td>
+                                                    <td >${gj.dv}</td>
+                                                    <td >${gj.hcr}</td>
+                                                    <td >${gj.sr}</td>
+                                                    <td >${gj.vcr}</td>
+                                                    <c:if test="${gj.testlabel == gj.model}">
+                                                        <td >${gj.testlabel}</td>
+                                                    </c:if>
+                                                    <c:if test="${gj.testlabel != gj.model}">
+                                                        <td style="color: red">${gj.testlabel}</td>
+                                                    </c:if>
+                                                </tr>
+                                            </c:forEach>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div >
+                                        <div>
+                                            <form method="post" id="showFeature" action="/classresult" >
+                                                <p>第
+                                                    <input  size="3" type="text" id="pageNo" name="pageNo" value=${pageNo}>
+                                                    页 共${sum}页 <input class="hvr-skew-forward" type="submit"  value="GO"></p>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <%--</div>--%>
+                        </div>
+                        <div class="clearfix"></div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Classie -->
-    <script src="js/classie.js"></script>
-    <script>
-        var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
-                showLeftPush = document.getElementById( 'showLeftPush' ),
-                body = document.body;
+    <!--typo-ends-->
 
-        showLeftPush.onclick = function() {
-            classie.toggle( this, 'active' );
-            classie.toggle( body, 'cbp-spmenu-push-toright' );
-            classie.toggle( menuLeft, 'cbp-spmenu-open' );
-            disableOther( 'showLeftPush' );
-        };
+    <div class="copy-section">
+        <p>Copyright NCUT LAB1107-杨佳放</p>
+    </div>
+</div>
+<!-- Classie -->
+<script src="js/classie.js"></script>
+<script>
+    var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+            showLeftPush = document.getElementById( 'showLeftPush' ),
+            body = document.body;
+
+    showLeftPush.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( body, 'cbp-spmenu-push-toright' );
+        classie.toggle( menuLeft, 'cbp-spmenu-open' );
+        disableOther( 'showLeftPush' );
+    };
 
 
-        function disableOther( button ) {
-            if( button !== 'showLeftPush' ) {
-                classie.toggle( showLeftPush, 'disabled' );
-            }
+    function disableOther( button ) {
+        if( button !== 'showLeftPush' ) {
+            classie.toggle( showLeftPush, 'disabled' );
         }
-    </script>
-    <!-- Bootstrap Core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!--scrolling js-->
-    <script src="js/jquery.nicescroll.js"></script>
-    <script src="js/scripts.js"></script>
-    <!--//scrolling js-->
+    }
 
 
+</script>
+<!-- Bootstrap Core JavaScript -->
 
-
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!--scrolling js-->
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/scripts.js"></script>
+<!--//scrolling js-->
 </body>
 </html>

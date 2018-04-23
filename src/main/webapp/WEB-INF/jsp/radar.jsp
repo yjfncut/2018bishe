@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>轨迹分类系统</title>
+    <title>Blank-Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Ultra Modern Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
@@ -29,17 +29,6 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
     <script src="js/custom.js"></script>
     <link href="css/custom.css" rel="stylesheet">
     <!--//Metis Menu -->
-    <!-- pop-up -->
-    <link rel="stylesheet" href="css/swipebox.css">
-    <script src="js/jquery.swipebox.min.js"></script>
-    <script type="text/javascript">
-        jQuery(function($) {
-            $(".swipebox").swipebox();
-        });
-    </script>
-
-    <!-- pop-up -->
-
 </head>
 <body class="cbp-spmenu-push">
 <div class="main-content">
@@ -50,39 +39,95 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                 <div class="scrollbar scrollbar1">
                     <ul class="nav" id="side-menu">
                         <li>
-                            <a href="index.html" class="active"><i class="fa fa-home nav_icon"></i>首页</a>
+                            <a href="index.html"><i class="fa fa-home nav_icon"></i>Dashboard</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-cogs nav_icon"></i>数据集介绍 <span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-cogs nav_icon"></i>Components <span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level collapse">
                                 <li>
-                                    <a href="${ctx}/gallery">数据集介绍</a>
+                                    <a href="gallery.jsp">Gallery</a>
                                 </li>
                                 <li>
-                                    <a href="${ctx}/example">初始数据格式</a>
+                                    <a href="grid.html">Grid</a>
                                 </li>
                             </ul>
                             <!-- /nav-second-level -->
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-book nav_icon"></i>轨迹数据 <span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-book nav_icon"></i>Elements <span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level collapse">
                                 <li>
-                                    <a href="${ctx}/datatable">数据列表</a>
+                                    <a href="buttons.html">Buttons</a>
+                                </li>
+                                <li>
+                                    <a href="typography.html">Typography</a>
+                                </li>
+                                <li>
+                                    <a href="icon.html">Icon</a>
                                 </li>
                             </ul>
                             <!-- /nav-second-level -->
                         </li>
                         <li>
-                            <a href="widgets.html"><i class="fa fa-book nav_icon"></i>轨迹分类</a>
+                            <a href="widgets.html"><i class="fa fa-th-large nav_icon"></i>Widgets</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-check-square-o nav_icon"></i>Forms<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level collapse">
                                 <li>
-                                    <a href="${ctx}/dataclass">分类实验</a>
+                                    <a href="inputs.html">Inputs</a>
                                 </li>
                                 <li>
-                                    <a href="${ctx}/classresult">分类结果</a>
+                                    <a href="validation.html">Form Validation</a>
                                 </li>
                             </ul>
+                            <!-- //nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-envelope nav_icon"></i>Mailbox<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level collapse">
+                                <li>
+                                    <a href="inbox.html">Inbox</a>
+                                </li>
+                                <li>
+                                    <a href="inboxdetails.html">Inbox Details</a>
+                                </li>
+                            </ul>
+                            <!-- //nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="maps.html"><i class="fa fa-location-arrow nav_icon"></i>Maps</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-file-text-o nav_icon"></i>Pages<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level collapse">
+                                <li>
+                                    <a href="login.html">Login</a>
+                                </li>
+                                <li>
+                                    <a href="signup.html">SignUp</a>
+                                </li>
+                                <li>
+                                    <a href="blank-page.html">Blank Page</a>
+                                </li>
+                            </ul>
+                            <!-- //nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="charts.html" class="chart-nav"><i class="fa fa-bar-chart nav_icon"></i>Charts</a>
+                        </li>
+                        <li>
+                            <a href="#" class="chart11-nav"><i class="fa fa-list-ul nav_icon"></i>Extras<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level collapse">
+                                <li>
+                                    <a href="tables.html">Tables</a>
+                                </li>
+                                <li>
+                                    <a href="404.html">404 Page</a>
+                                </li>
+                            </ul>
+                            <!-- //nav-second-level -->
                         </li>
                     </ul>
                 </div>
@@ -96,7 +141,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
         <div class="header-left">
             <!--logo -->
             <div class="logo">
-                <a href="index.html"><h1>轨迹分类系统</h1></a>
+                <a href="index.html"><h1>Ultra Modern</h1></a>
             </div>
             <!--//logo-->
             <div class="user-right">
@@ -113,7 +158,7 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
                                 <ul class="dropdown-menu drp-mnu">
                                     <li> <a href="#"><i class="fa fa-cog"></i> Settings</a> </li>
                                     <li> <a href="#"><i class="fa fa-user"></i> Profile</a> </li>
-                                    <li> <a href="login.html"><i class="fa fa-sign-out"></i> Logout</a> </li>
+                                    <li> <a href="#"><i class="fa fa-sign-out"></i> Logout</a> </li>
                                 </ul>
                             </li>
                         </ul>
@@ -218,58 +263,117 @@ SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony
         <div class="clearfix"> </div>
     </div>
     <!-- //header-ends -->
+    <!-- //header-ends -->
     <div id="page-wrapper">
         <div class="main-page">
             <div class="blank-page">
-                <h2>GeoLife数据介绍</h2>
-                ${content}
-            </div>
-            <div class="gallery-grids galry">
-                <div class="col-md-4 gallery-grid">
-                    <a href="images/example.png" class="swipebox"><span class="rollover1"> </span></a>
-                    <img src="images/example.png" class="img-responsive" alt="/">
-                </div>
-                <div class="col-md-4 gallery-grid">
-                    <a href="images/example1.png" class="swipebox"><span class="rollover1"> </span></a>
-                    <img src="images/example1.png" class="img-responsive" alt="/">
-                </div>
-                <div class="col-md-4 gallery-grid">
-                    <a href="images/example2.png" class="swipebox"><span class="rollover1"> </span></a>
-                    <img src="images/example2.png" class="img-responsive" alt="/">
-                </div>
+                <div id="container" style="height: 800px;width:1600px;float:left;margin-left:5%;margin-right: 5%;margin-bottom: 5%;margin-top: 3%;"></div>
+                <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+                <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
+                <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
+                <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+                <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+                <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
+                <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
+                <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+                <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
+                <script type="text/javascript">
+                    var dom = document.getElementById("container");
+                    var myChart = echarts.init(dom);
+                    var app = {};
+                    var xAxisData = ['2018-01', '2018-02', '2018-03', '2018-04', '2018-05', '2018-06', '2018-07', '2018-08', '2018-09', '2018-10','2018-11','2018-12'];
+                    var legendData= ['投诉量','解决量','投诉解决率','ooo'];
+                    var title = "多横向折线图";
+                    var serieData = [];
+                    var metaDate = [
+                        [120, 140, 100, 120, 300, 230, 130, 170,140, 120, 300, 230],
+                        [200, 120, 300, 200, 170, 300, 200, 180,200, 190, 300, 200],
+                        [100,200, 140, 300, 200, 180, 100, 300, 230, 130, 100 ,300],
+                        [150,100, 150, 100, 150, 100, 150, 100, 150, 100, 150 ,100]
+                    ]
+
+
+                    for(var v=0; v < legendData.length ; v++){
+                        var serie = {
+                            name:legendData[v],
+                            type: 'line',
+                            symbol:"circle",
+                            symbolSize:10,
+                            data: metaDate[v]
+                        };
+                        serieData.push(serie)
+                    }
+                    var colors = ${color};
+                    var option = {
+                        backgroundColor: '#0f375f',
+                        title : {text: title,textAlign:'left',textStyle:{color:"#fff",fontSize:"16",fontWeight:"normal"}},
+                        legend: {
+                            show:true,left:"right",data:legendData,y:"5%",
+                            itemWidth:18,itemHeight:12,textStyle:{color:"#fff",fontSize:14},
+                        },
+                        color:colors,
+                        grid: {left: '2%',top:"12%",bottom: "5%",right:"5%",containLabel: true},
+                        tooltip : { trigger: 'axis',axisPointer : { type : 'shadow'}},
+                        xAxis: [
+                            {
+                                type: 'category',
+                                axisLine: { show: true,lineStyle:{ color:'#6173A3' }},
+                                axisLabel:{interval:0,textStyle:{color:'#9ea7c4',fontSize:14} },
+                                axisTick : {show: false},
+                                data:xAxisData,
+                            },
+                        ],
+                        yAxis: [
+                            {
+                                axisTick : {show: false},
+                                splitLine: {show:false},
+                                axisLabel:{textStyle:{color:'#9ea7c4',fontSize:14} },
+                                axisLine: { show: true,lineStyle:{ color:'#6173A3'}},
+                            },
+                        ],
+                        series:serieData
+                    };
+                    ;
+                    if (option && typeof option === "object") {
+                        myChart.setOption(option, true);
+                    }
+                </script>
             </div>
         </div>
     </div>
-    <!-- Classie -->
-    <script src="js/classie.js"></script>
-    <script>
-        var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
-                showLeftPush = document.getElementById( 'showLeftPush' ),
-                body = document.body;
+    <!--typo-ends-->
 
-        showLeftPush.onclick = function() {
-            classie.toggle( this, 'active' );
-            classie.toggle( body, 'cbp-spmenu-push-toright' );
-            classie.toggle( menuLeft, 'cbp-spmenu-open' );
-            disableOther( 'showLeftPush' );
-        };
+    <div class="copy-section">
+        <p>Copyright &copy; 2016.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+    </div>
+</div>
+<!-- Classie -->
+<script src="js/classie.js"></script>
+<script>
+    var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+            showLeftPush = document.getElementById( 'showLeftPush' ),
+            body = document.body;
+
+    showLeftPush.onclick = function() {
+        classie.toggle( this, 'active' );
+        classie.toggle( body, 'cbp-spmenu-push-toright' );
+        classie.toggle( menuLeft, 'cbp-spmenu-open' );
+        disableOther( 'showLeftPush' );
+    };
 
 
-        function disableOther( button ) {
-            if( button !== 'showLeftPush' ) {
-                classie.toggle( showLeftPush, 'disabled' );
-            }
+    function disableOther( button ) {
+        if( button !== 'showLeftPush' ) {
+            classie.toggle( showLeftPush, 'disabled' );
         }
-    </script>
-    <!-- Bootstrap Core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!--scrolling js-->
-    <script src="js/jquery.nicescroll.js"></script>
-    <script src="js/scripts.js"></script>
-    <!--//scrolling js-->
+    }
+</script>
+<!-- Bootstrap Core JavaScript -->
 
-
-
-
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!--scrolling js-->
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/scripts.js"></script>
+<!--//scrolling js-->
 </body>
 </html>

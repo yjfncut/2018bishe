@@ -13,6 +13,16 @@ public class Guiji {
     Float sr;
     Float vcr;
 
+    String testlabel;
+
+    public String getTestlabel() {
+        return testlabel;
+    }
+
+    public void setTestlabel(String testlabel) {
+        this.testlabel = testlabel;
+    }
+
     public String getModel() {
         return model;
     }
